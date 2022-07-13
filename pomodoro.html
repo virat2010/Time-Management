@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <script type="text/javascript" src="main.js"></script>
+      <h1>The Pomodoro App</h1>
+      <p>Click work and work for 25 minutes</p>
+      <a href="./Main.html"><button class="btn btn-secondary">Back</button></a>
+    </div>
+<style type="text/css">
+#containery {
+    text-align:center;
+    background : #333;
+}
+#timer { 
+    color:#f00; 
+    font-size:50px; 
+    margin:10px auto;
+    border : 5px solid red;
+    border-radius:20%;
+    width:500px;
+    height:400px;
+    overflow:hidden;
+    position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+#time {
+    margin-top:110px;
+    z-index : 1;
+    position:relative;
+    font-size:100px;
+}
+#filler {
+    background : #ddffcc;
+    height: 0px;
+    width: 200px;
+    position:absolute;
+    bottom:0;
+}
+#buttons button { 
+    background:#4da6ff; 
+    border:none; 
+    color:#fff; 
+    cursor:pointer; 
+    padding:5px; 
+    width:90px; 
+    margin:40px auto;
+    font-size:15px;
+    height : 50px;
+    border-radius : 10px;
+    -webkit-animation: 0.2s;
+    margin-right: 20px;
+}
+#buttons button#shortBreak {
+    background : #0c0;
+}
+#buttons button#longBreak {
+    background : #080;
+}
+#buttons button#stop {
+    background : #f00;
+}
+</style>
+</head>
+<body>
+<div id="containery">
+    <div id="timer">
+      <div id="time">
+         <span id="minutes">25</span>
+         <span id="colon">:</span>
+         <span id="seconds">00</span>
+      </div>
+      <div id="filler"></div>
+    </div>
+
+    <div id="buttons">
+      <button id="work" class="btn btn-primary">Work</button>
+      <button id="shortBreak" class="btn btn-primary">Short Break</button>
+      <button id="longBreak" class="btn btn-primary">Long Break</button>
+      <button id="stop" class="btn btn-primary">Stop</button>
+    </div>
+</div>
+</body>
+</html>
